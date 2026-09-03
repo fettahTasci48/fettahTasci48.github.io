@@ -1,327 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdülfettah Taşcı — Mechanical Engineer, UAV &amp; Systems</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdülfettah Taşcı — Mechanical Engineering portfolio focused on UAV development, aerospace systems, CFD/FEA, topology optimization, manufacturing and engineering R&D." />
+  <meta name="theme-color" content="#07101c" />
+  <title>Abdülfettah Taşcı | Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-  <div class="reg reg-tl" aria-hidden="true"></div>
-  <div class="reg reg-tr" aria-hidden="true"></div>
-  <div class="reg reg-bl" aria-hidden="true"></div>
-  <div class="reg reg-br" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-box">AT</span>
+        <span class="brand-copy"><b>ABDÜLFETTAH TAŞCI</b><small>MECHANICAL ENGINEERING</small></span>
+      </a>
 
-  <header class="site-head">
-    <a href="#top" class="mark">AT<span>·48</span></a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#toolkit">Toolkit</a>
-      <a href="#contact">Contact</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="nav-cv" href="assets/docs/Abdulfettah_Tasci_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <main id="top">
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-spotlight" aria-hidden="true"></div>
 
-    <section class="hero">
-      <div class="hero-text">
-        <p class="role">Mechanical Engineering Student</p>
-        <h1>Building systems where mechanics meet intelligence.</h1>
-        <p class="lede">Focused on UAVs and aerospace systems — from mathematical modeling and topology optimization in nTop, to CFD in ANSYS Fluent and structural analysis in ANSYS Mechanical, through to manufacturing with composites and CNC.</p>
-        <div class="cta-row">
-          <a class="btn btn-solid" href="#projects">View projects</a>
-          <a class="btn btn-line" href="assets/Abdulfettah_Tasci_CV.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+      <div class="hero-copy reveal">
+        <div class="status-line"><i></i><span>UAV · AEROSPACE · R&D · SIMULATION</span></div>
+        <h1>Engineering from <span class="outline">geometry</span> to <span class="accent">flight.</span></h1>
+        <p class="hero-lead">Mechanical Engineering student working across aircraft and drone design, aerodynamic and structural analysis, topology optimization, manufacturing and mission-oriented engineering.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" href="#projects"><span>Explore projects</span><b>↘</b></a>
+          <a class="btn btn-secondary magnetic" href="assets/docs/Abdulfettah_Tasci_Portfolio.pdf" target="_blank" rel="noopener"><span>Original portfolio</span><b>↗</b></a>
+        </div>
+
+        <div class="hero-stats" aria-label="Portfolio summary">
+          <div><strong data-count="7">0</strong><span>Featured projects</span></div>
+          <div><strong data-count="3">0</strong><span>Team / R&D roles</span></div>
+          <div><strong>CAD → CAE</strong><span>Design to validation</span></div>
         </div>
       </div>
 
-      <figure class="hero-diagram" aria-hidden="true">
-        <svg viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="currentColor" stroke-width="1.4" fill="none">
-            <line x1="90" y1="90" x2="330" y2="270"/>
-            <line x1="330" y1="90" x2="90" y2="270"/>
-            <rect x="178" y="152" width="64" height="56" rx="2"/>
-            <circle cx="90" cy="90" r="34"/>
-            <circle cx="330" cy="90" r="34"/>
-            <circle cx="90" cy="270" r="34"/>
-            <circle cx="330" cy="270" r="34"/>
-            <circle cx="90" cy="90" r="3" fill="currentColor" stroke="none"/>
-            <circle cx="330" cy="90" r="3" fill="currentColor" stroke="none"/>
-            <circle cx="90" cy="270" r="3" fill="currentColor" stroke="none"/>
-            <circle cx="330" cy="270" r="3" fill="currentColor" stroke="none"/>
-          </g>
-          <g stroke="currentColor" stroke-width="1" opacity="0.65">
-            <line x1="90" y1="316" x2="330" y2="316"/>
-            <line x1="90" y1="308" x2="90" y2="324"/>
-            <line x1="330" y1="308" x2="330" y2="324"/>
-          </g>
-          <text x="210" y="340" text-anchor="middle" class="dim-label">ROTOR SPAN · 4×</text>
-          <text x="20" y="24" class="dim-label">DWG. AT-01 / UAV FRAME / REV.C</text>
-        </svg>
-      </figure>
-    </section>
+      <div class="hero-visual reveal" aria-label="Featured engineering work">
+        <div class="visual-grid">
+          <button class="visual-card visual-card-main project-trigger" data-project="fixed-wing" type="button" aria-label="Open fixed-wing project">
+            <img src="assets/images/fixed-wing-1.png" alt="Autonomous search and rescue fixed-wing UAV" />
+            <span class="visual-label"><small>FEATURED / 02</small><b>Autonomous SAR Fixed Wing</b></span>
+          </button>
 
-    <section id="about" class="sheet">
-      <div class="sheet-tag">SHEET 01 — PROFILE</div>
-      <h2>Engineering beyond one discipline.</h2>
+          <button class="visual-card visual-card-small project-trigger" data-project="topology" type="button" aria-label="Open topology-inspired UAV frame project">
+            <img src="assets/images/topology-2.png" alt="Topology-inspired UAV frame structural analysis" />
+            <span class="visual-label"><small>CAE / 07</small><b>Topology Frame</b></span>
+          </button>
 
-      <div class="about-grid">
-        <div class="about-photos">
-          <img src="assets/img/profile-headshot.jpg" alt="Portrait of Abdülfettah Taşcı">
-          <img src="assets/img/profile-workshop.jpg" alt="Abdülfettah Taşcı cutting sheet metal in the workshop">
+          <button class="visual-card visual-card-small project-trigger" data-project="cfd" type="button" aria-label="Open UAV CFD project">
+            <img src="assets/images/cfd-4.png" alt="CFD analysis around UAV airfoil" />
+            <span class="visual-label"><small>CFD / 06</small><b>Combat UAV Analysis</b></span>
+          </button>
         </div>
-        <div class="about-copy">
-          <p class="body-copy">Mechanical Engineering student at Erzurum Technical University with a strong focus on UAVs, aerospace systems, and advanced engineering design. Experienced in mathematical modeling, topology optimization with nTop, fluid flow analysis in ANSYS Fluent, and structural analysis in ANSYS Mechanical — using SolidWorks, Siemens NX, XFLR5, and composite materials to take a design from sketch to flight-ready hardware.</p>
-          <div class="fact-row">
-            <div><span class="tb-label">Program</span><span class="tb-value">Mechanical Engineering</span></div>
-            <div><span class="tb-label">University</span><span class="tb-value">Erzurum Technical University</span></div>
-            <div><span class="tb-label">Since</span><span class="tb-value">2022</span></div>
-          </div>
-        </div>
+        <div class="hero-index" aria-hidden="true"><span>01</span><span>DESIGN</span><span>SIMULATE</span><span>BUILD</span><span>TEST</span></div>
       </div>
     </section>
 
-    <section id="experience" class="sheet">
-      <div class="sheet-tag">SHEET 02 — EXPERIENCE</div>
-      <h2>Experience</h2>
-
-      <div class="timeline">
-        <article class="tl-item">
-          <div class="tl-meta">
-            <span class="tl-date">Nov 2024 — Present</span>
-            <span class="spec-no">AT-EXP-01</span>
-          </div>
-          <h3>Mechanical Design Team Member</h3>
-          <p class="tl-org">ETÜKEN UAV Team · Erzurum, Türkiye</p>
-          <ul>
-            <li>Designed aircraft and drone systems in SolidWorks; performed structural analyses in ANSYS Mechanical and aerodynamic analyses using XFLR5 and ANSYS Fluent.</li>
-            <li>Manufactured aircraft structures under vacuum using epoxy resin and fiberglass; produced the drone fuselage through CNC aluminum cutting and completed assembly.</li>
-            <li>Performed geometry optimization, flow analysis, and structural analysis for aircraft and drone systems.</li>
-          </ul>
-        </article>
-
-        <article class="tl-item">
-          <div class="tl-meta">
-            <span class="tl-date">Sep 2025 — Present</span>
-            <span class="spec-no">AT-EXP-02</span>
-          </div>
-          <h3>Project Team Member</h3>
-          <p class="tl-org">Makist R&amp;D Engineering · Erzurum, Türkiye</p>
-          <ul>
-            <li>Contributed to the development of a driverless test vehicle system for trailer rear-impact safety tests.</li>
-            <li>Worked on the steering control and release mechanism used during the impact test process.</li>
-            <li>Supported the evaluation of a patented energy-absorbing trailer safety system.</li>
-          </ul>
-        </article>
-
-        <article class="tl-item">
-          <div class="tl-meta">
-            <span class="tl-date">Jul 2025 — Dec 2025</span>
-            <span class="spec-no">AT-EXP-03</span>
-          </div>
-          <h3>Animation &amp; Post-Process Specialist</h3>
-          <p class="tl-org">Add4Bio · Erzurum, Türkiye</p>
-          <ul>
-            <li>Performed post-processing on manufactured titanium and PLA parts, including sanding and polishing, and supported related production processes.</li>
-            <li>Created surgical animations and technical visualizations in Blender to support doctors during patient-specific implant procedures.</li>
-          </ul>
-        </article>
+    <div class="tool-marquee" aria-label="Engineering tools">
+      <div class="marquee-track">
+        <span>SOLIDWORKS</span><i>◆</i><span>ANSYS MECHANICAL</span><i>◆</i><span>ANSYS FLUENT</span><i>◆</i><span>XFLR5</span><i>◆</i><span>nTOP</span><i>◆</i><span>SIEMENS NX</span><i>◆</i><span>MATLAB</span><i>◆</i><span>UAV DEVELOPMENT</span><i>◆</i>
+        <span>SOLIDWORKS</span><i>◆</i><span>ANSYS MECHANICAL</span><i>◆</i><span>ANSYS FLUENT</span><i>◆</i><span>XFLR5</span><i>◆</i><span>nTOP</span><i>◆</i><span>SIEMENS NX</span><i>◆</i><span>MATLAB</span><i>◆</i><span>UAV DEVELOPMENT</span><i>◆</i>
       </div>
-    </section>
+    </div>
 
-    <section id="projects" class="sheet">
-      <div class="sheet-tag">SHEET 03 — SELECTED PROJECTS</div>
-      <h2>Selected projects</h2>
-
-      <div class="proj-stack">
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Autonomous Search &amp; Rescue Drone</h3>
-            <span class="spec-no">AT-01</span>
-          </div>
-          <p>Mechanical design engineer for the multirotor platform — lightweight construction, functionality, component integration, and structural layout, verified through structural simulation.</p>
-          <div class="img-strip">
-            <img src="assets/img/proj-sardrone-cad.jpg" alt="SolidWorks CAD model of the multirotor drone">
-            <img src="assets/img/proj-sardrone-photo.jpg" alt="Assembled multirotor drone on the workbench">
-            <img src="assets/img/proj-sardrone-fea1.jpg" alt="Structural deformation analysis of the drone frame">
-            <img src="assets/img/proj-sardrone-fea2.jpg" alt="Equivalent stress analysis of the drone frame">
-          </div>
-          <div class="tags"><span>SolidWorks</span><span>ANSYS Mechanical</span><span>Structural Design</span></div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Autonomous Search &amp; Rescue — Fixed Wing</h3>
-            <span class="spec-no">AT-02</span>
-          </div>
-          <p>Contributed to design and manufacturing of the fixed-wing UAV platform for the same search-and-rescue system, strengthening mission-oriented UAV development skills.</p>
-          <div class="img-strip">
-            <img src="assets/img/proj-fixedwing-photo.jpg" alt="Fixed-wing UAV airframe on the workshop floor">
-            <img src="assets/img/proj-fixedwing-team.jpg" alt="Team standing with the fixed-wing UAV before a test">
-            <img src="assets/img/proj-fixedwing-stand.jpg" alt="Fixed-wing UAV mounted on stands in the lab">
-          </div>
-          <div class="tags"><span>Composite Layup</span><span>Flight Test</span><span>Team Build</span></div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Surveillance &amp; Reconnaissance UAV</h3>
-            <span class="spec-no">AT-03</span>
-          </div>
-          <p>Designed and developed a practical fixed-wing UAV platform for observation, monitoring, and field reconnaissance missions, from CAD through to manufacturing.</p>
-          <div class="img-strip">
-            <img src="assets/img/proj-surveillance-cad.jpg" alt="Siemens NX wireframe model of the surveillance UAV">
-            <img src="assets/img/proj-surveillance-mat.jpg" alt="Surveillance UAV fuselage on the cutting mat">
-            <img src="assets/img/proj-surveillance-workshop.jpg" alt="Assembled surveillance UAV in the workshop">
-          </div>
-          <div class="tags"><span>Siemens NX</span><span>Airframe Design</span><span>Manufacturing</span></div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Surgical Animation &amp; Titanium Post-Processing</h3>
-            <span class="spec-no">AT-04</span>
-          </div>
-          <p>At Add4Bio, created surgical animations to walk doctors through the procedure pathway, and post-processed manufactured titanium implant parts — sanding and polishing. A non-realistic skull model from GrabCAD stood in for any real patient data.</p>
-          <div class="img-strip">
-            <img src="assets/img/proj-add4bio-skull.jpg" alt="Implant plan visualized on a non-patient skull model">
-            <img src="assets/img/proj-add4bio-titanium.jpg" alt="Post-processed titanium implant part">
-          </div>
-          <div class="tags"><span>Blender</span><span>Medical Devices</span><span>Post-Processing</span></div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Trailer Rear-Impact Test System</h3>
-            <span class="spec-no">AT-05</span>
-          </div>
-          <p>A safety-focused project evaluating a patented energy-absorbing system for the rear of truck trailers. Since the test vehicle carried no driver, the team built a dedicated steering and release mechanism to guide and deploy it safely during impact testing.</p>
-          <div class="img-strip">
-            <img src="assets/img/proj-makist-render.jpg" alt="3D render of the steering mechanism">
-            <img src="assets/img/proj-makist-circuit.jpg" alt="Assembled steering and release mechanism hardware">
-            <img src="assets/img/proj-makist-solidworks.jpg" alt="SolidWorks model of the trailer test component">
-          </div>
-          <div class="tags"><span>Test Engineering</span><span>Controls</span><span>Safety Systems</span></div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>CFD &amp; Structural Analysis — TEKNOFEST Combat UAV</h3>
-            <span class="spec-no">AT-06</span>
-          </div>
-          <p>Aerodynamic and structural analysis of a UAV test prototype built for the TEKNOFEST Combat UAV Competition, using ANSYS Fluent, ANSYS Mechanical, and XFLR5 to study airflow behavior, aerodynamic performance, and structural response under load.</p>
-          <div class="img-strip">
-            <img src="assets/img/proj-teknofest-cfd-pressure.jpg" alt="CFD dynamic pressure contour on an airfoil section">
-            <img src="assets/img/proj-teknofest-cfd-velocity.jpg" alt="Velocity streamlines around the UAV in ANSYS Fluent">
-            <img src="assets/img/proj-teknofest-structural1.jpg" alt="Structural deformation results on the UAV airframe">
-            <img src="assets/img/proj-teknofest-structural2.jpg" alt="Equivalent stress results on the UAV airframe">
-          </div>
-          <div class="tags"><span>CFD</span><span>XFLR5</span><span>ANSYS Fluent</span></div>
-        </article>
-
-        <article class="proj-card">
-          <div class="proj-head">
-            <h3>Topology-Optimized UAV Frame</h3>
-            <span class="spec-no">AT-07</span>
-          </div>
-          <p>Developed a lightweight UAV frame starting from a GrabCAD geometry, evaluated its structural performance, and carried it through to manufacturing. The project's organic, load-driven topology sparked a deeper interest in nTop and topology-driven design.</p>
-          <div class="img-strip">
-            <img src="assets/img/proj-topology-ntop.jpg" alt="Topology-optimized frame geometry in nTop">
-            <img src="assets/img/proj-topology-stress.jpg" alt="Structural stress analysis of the topology-optimized frame">
-            <img src="assets/img/proj-topology-print.jpg" alt="3D printing the topology-optimized frame">
-            <img src="assets/img/proj-topology-drone.jpg" alt="Assembled drone using the topology-optimized frame">
-          </div>
-          <div class="tags"><span>nTop</span><span>Topology Optimization</span><span>Additive Manufacturing</span></div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="toolkit" class="sheet">
-      <div class="sheet-tag">SHEET 04 — TOOLKIT</div>
-      <h2>Engineering toolkit</h2>
-
-      <div class="toolkit-table">
-        <div class="tk-row">
-          <span class="tk-cat">CAD</span>
-          <div class="tags"><span>SolidWorks</span><span>AutoCAD</span><span>Siemens NX</span><span>Blender</span></div>
+    <section class="about section shell" id="about">
+      <div class="section-rail reveal"><span>01</span><p>ABOUT</p></div>
+      <div class="section-main">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SYSTEM-ORIENTED ENGINEERING</p>
+          <h2>I do not stop at the CAD model.</h2>
         </div>
-        <div class="tk-row">
-          <span class="tk-cat">Analysis</span>
-          <div class="tags"><span>ANSYS Mechanical</span><span>ANSYS Fluent</span><span>XFLR5</span><span>MATLAB</span></div>
+
+        <div class="about-grid">
+          <p class="about-lead reveal">My work connects <em>mechanical design</em>, <em>aerodynamics</em>, <em>structural simulation</em>, <em>topology optimization</em> and <em>manufacturing</em> to build and validate complete engineering systems.</p>
+          <div class="about-details reveal">
+            <p>My main focus is UAV and aerospace development, supported by hands-on experience with composite manufacturing, CNC-supported fabrication, simulation-driven design and technical visualization.</p>
+            <div class="about-caps">
+              <span>Aircraft & drone development</span>
+              <span>CFD & structural analysis</span>
+              <span>Topology-driven lightweighting</span>
+              <span>Manufacturing & prototyping</span>
+              <span>R&D test systems</span>
+            </div>
+          </div>
         </div>
-        <div class="tk-row">
-          <span class="tk-cat">Optimization</span>
-          <div class="tags"><span>nTop</span><span>Topology Optimization</span><span>Mathematical Modeling</span></div>
-        </div>
-        <div class="tk-row">
-          <span class="tk-cat">Systems</span>
-          <div class="tags"><span>UAV Design &amp; Manufacturing</span><span>Composite Layup</span><span>CNC</span><span>FPV Piloting</span></div>
-        </div>
-        <div class="tk-row">
-          <span class="tk-cat">Languages</span>
-          <div class="tags"><span>Turkish — Native</span><span>English — B2</span></div>
+
+        <div class="process reveal" aria-label="Engineering workflow">
+          <article><small>01</small><b>Design</b><p>Geometry, packaging, component integration and mission requirements.</p></article>
+          <article><small>02</small><b>Simulate</b><p>CFD, FEA, XFLR5 and topology-based performance evaluation.</p></article>
+          <article><small>03</small><b>Manufacture</b><p>Composite, CNC-supported and additive manufacturing workflows.</p></article>
+          <article><small>04</small><b>Test</b><p>Flight, mechanism and safety-focused validation in real conditions.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="titleblock">
-      <div class="tb-row">
-        <div class="tb-cell tb-wide">
-          <span class="tb-label">Name</span>
-          <span class="tb-value">Abdülfettah Taşcı</span>
-        </div>
-        <div class="tb-cell">
-          <span class="tb-label">Role</span>
-          <span class="tb-value">Mechanical Eng. Student</span>
-        </div>
-        <div class="tb-cell">
-          <span class="tb-label">Sheet</span>
-          <span class="tb-value">05 of 05</span>
-        </div>
-      </div>
-      <div class="tb-row">
-        <div class="tb-cell">
-          <span class="tb-label">Email</span>
-          <a class="tb-value tb-link" href="mailto:abdulfettah.tasci73@erzurum.edu.tr">abdulfettah.tasci73@erzurum.edu.tr</a>
-        </div>
-        <div class="tb-cell">
-          <span class="tb-label">Phone</span>
-          <a class="tb-value tb-link" href="tel:+905539748748">+90 553 974 8748</a>
-        </div>
-        <div class="tb-cell">
-          <span class="tb-label">Location</span>
-          <span class="tb-value">Seydikemer / Muğla</span>
-        </div>
-      </div>
-      <div class="tb-row">
-        <div class="tb-cell">
-          <span class="tb-label">LinkedIn</span>
-          <a class="tb-value tb-link" href="https://www.linkedin.com/in/abd%C3%BClfettah-ta%C5%9Fc%C4%B1-286494336" target="_blank" rel="noopener">abdülfettah-taşcı</a>
-        </div>
-        <div class="tb-cell">
-          <span class="tb-label">GrabCAD</span>
-          <a class="tb-value tb-link" href="https://grabcad.com/fettah.tasci-1" target="_blank" rel="noopener">fettah.tasci-1</a>
-        </div>
-        <div class="tb-cell">
-          <span class="tb-label">GitHub</span>
-          <a class="tb-value tb-link" href="https://github.com/fettahTasci48" target="_blank" rel="noopener">fettahTasci48</a>
+    <section class="projects section" id="projects">
+      <div class="shell project-shell">
+        <div class="section-rail reveal"><span>02</span><p>PROJECTS</p></div>
+        <div class="section-main">
+          <div class="project-header reveal">
+            <div class="section-heading">
+              <p class="eyebrow">SELECTED ENGINEERING WORK</p>
+              <h2>Built. Simulated. Tested.</h2>
+            </div>
+            <div class="filters" role="group" aria-label="Filter projects">
+              <button class="filter is-active" type="button" data-filter="all">All</button>
+              <button class="filter" type="button" data-filter="uav">UAV</button>
+              <button class="filter" type="button" data-filter="analysis">Analysis</button>
+              <button class="filter" type="button" data-filter="rd">R&D</button>
+            </div>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-feature reveal" data-category="uav analysis" data-project="sar-drone" tabindex="0">
+              <div class="project-image"><img src="assets/images/sar-drone-1.png" alt="Autonomous search and rescue multirotor drone" loading="lazy" /></div>
+              <div class="project-copy"><div class="project-top"><span>01 / UAV · MECHANICAL DESIGN</span><span>↗</span></div><h3>Autonomous Search & Rescue — Drone</h3><p>Multirotor platform designed with lightweight construction, component integration and structural layout as key design drivers.</p><div class="project-tags"><span>SolidWorks</span><span>ANSYS</span><span>UAV</span></div></div>
+            </article>
+
+            <article class="project-card reveal" data-category="uav" data-project="fixed-wing" tabindex="0">
+              <div class="project-image"><img src="assets/images/fixed-wing-1.png" alt="Autonomous search and rescue fixed-wing UAV" loading="lazy" /></div>
+              <div class="project-copy"><div class="project-top"><span>02 / UAV · DESIGN & MANUFACTURING</span><span>↗</span></div><h3>Autonomous Search & Rescue — Fixed Wing</h3><p>Fixed-wing UAV platform developed for mission-oriented search and rescue operations.</p><div class="project-tags"><span>Aircraft Design</span><span>Manufacturing</span></div></div>
+            </article>
+
+            <article class="project-card reveal" data-category="uav" data-project="recon" tabindex="0">
+              <div class="project-image"><img src="assets/images/recon-1.png" alt="Surveillance and reconnaissance UAV" loading="lazy" /></div>
+              <div class="project-copy"><div class="project-top"><span>03 / UAV · DEVELOPMENT</span><span>↗</span></div><h3>Surveillance & Reconnaissance UAV</h3><p>Practical UAV platform developed for observation, monitoring and field reconnaissance missions.</p><div class="project-tags"><span>UAV Design</span><span>Structural Development</span></div></div>
+            </article>
+
+            <article class="project-card reveal" data-category="rd" data-project="add4bio" tabindex="0">
+              <div class="project-image"><img src="assets/images/add4bio-2.png" alt="Surgical animation skull model for Add4Bio" loading="lazy" /></div>
+              <div class="project-copy"><div class="project-top"><span>04 / BIOMEDICAL · VISUALIZATION</span><span>↗</span></div><h3>Surgical Animation & Titanium Post-Processing</h3><p>Surgical visualization for procedure communication plus sanding and polishing of manufactured titanium components.</p><div class="project-tags"><span>Blender</span><span>Post-Processing</span></div></div>
+            </article>
+
+            <article class="project-card reveal" data-category="rd" data-project="trailer" tabindex="0">
+              <div class="project-image"><img src="assets/images/trailer-2.png" alt="Trailer rear-impact test system" loading="lazy" /></div>
+              <div class="project-copy"><div class="project-top"><span>05 / R&D · TEST ENGINEERING</span><span>↗</span></div><h3>Trailer Rear-Impact Test System</h3><p>Driverless test setup with steering and release mechanisms for controlled safety testing of a rear-impact system.</p><div class="project-tags"><span>Mechanisms</span><span>Test Engineering</span></div></div>
+            </article>
+
+            <article class="project-card project-card-feature reveal" data-category="uav analysis" data-project="cfd" tabindex="0">
+              <div class="project-image"><img src="assets/images/cfd-4.png" alt="ANSYS Fluent aerodynamic analysis" loading="lazy" /></div>
+              <div class="project-copy"><div class="project-top"><span>06 / CFD · FEA · XFLR5</span><span>↗</span></div><h3>TEKNOFEST Combat UAV Analysis</h3><p>Aerodynamic and structural evaluation using ANSYS Fluent, ANSYS Mechanical and XFLR5.</p><div class="project-tags"><span>CFD</span><span>FEA</span><span>XFLR5</span></div></div>
+            </article>
+
+            <article class="project-card project-card-wide reveal" data-category="uav analysis" data-project="topology" tabindex="0">
+              <div class="project-image"><img src="assets/images/topology-2.png" alt="Topology-inspired UAV frame structural analysis" loading="lazy" /></div>
+              <div class="project-copy"><div class="project-top"><span>07 / TOPOLOGY · STRUCTURAL DESIGN</span><span>↗</span></div><h3>Topology-Inspired UAV Frame</h3><p>Lightweight UAV frame structurally evaluated, manufactured and used to explore organic topology-driven design.</p><div class="project-tags"><span>nTop</span><span>ANSYS Mechanical</span><span>Manufacturing</span></div></div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="experience section shell" id="experience">
+      <div class="section-rail reveal"><span>03</span><p>EXPERIENCE</p></div>
+      <div class="section-main">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FROM UNIVERSITY TEAMS TO APPLIED R&D</p>
+          <h2>Engineering in real workflows.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">NOV 2024 — PRESENT</div>
+            <div class="timeline-role"><h3>Mechanical Design Team Member</h3><p>ETÜKEN UAV Team · Erzurum, Türkiye</p></div>
+            <div class="timeline-desc"><p>Aircraft and drone design in SolidWorks; structural analyses in ANSYS Mechanical; aerodynamic analyses with XFLR5 and ANSYS Fluent; composite and CNC-supported manufacturing.</p></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">SEP 2025 — PRESENT</div>
+            <div class="timeline-role"><h3>Project Team Member</h3><p>Makist R&D Engineering · Erzurum, Türkiye</p></div>
+            <div class="timeline-desc"><p>Contributed to a driverless rear-impact test vehicle system, including steering control, release mechanism development and practical evaluation of an energy-absorbing safety system.</p></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">JUL 2025 — DEC 2025</div>
+            <div class="timeline-role"><h3>Animation & Post-Process Specialist</h3><p>Add4Bio · Erzurum, Türkiye</p></div>
+            <div class="timeline-desc"><p>Created surgical animations and technical visualizations in Blender and carried out post-processing of manufactured titanium and PLA parts.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section shell" id="skills">
+      <div class="section-rail reveal"><span>04</span><p>SKILLS</p></div>
+      <div class="section-main">
+        <div class="section-heading reveal">
+          <p class="eyebrow">ENGINEERING TOOLKIT</p>
+          <h2>Design, analyze, manufacture.</h2>
+        </div>
+
+        <div class="skills-board reveal">
+          <article><span>01</span><h3>CAD & Design</h3><p>SolidWorks · AutoCAD · Siemens NX · Blender</p></article>
+          <article><span>02</span><h3>Simulation & Analysis</h3><p>ANSYS Mechanical · ANSYS Fluent · XFLR5 · MATLAB</p></article>
+          <article><span>03</span><h3>Topology & Modeling</h3><p>nTop · topology optimization · mathematical modeling</p></article>
+          <article><span>04</span><h3>UAV Systems</h3><p>Aircraft and drone development · design · manufacturing · flow analysis · FPV operation</p></article>
+          <article><span>05</span><h3>Manufacturing</h3><p>Composite structures · epoxy/fiberglass · CNC-supported fabrication · additive manufacturing</p></article>
+          <article><span>06</span><h3>Working Style</h3><p>Simulation-driven problem solving · precision-focused work · system-oriented thinking</p></article>
+        </div>
+
+        <div class="education-row reveal">
+          <div><small>EDUCATION</small><h3>Erzurum Technical University</h3><p>Mechanical Engineering · 2022 — Present</p></div>
+          <div><small>LANGUAGES</small><h3>Turkish · English</h3><p>Native · B2</p></div>
+          <div><small>DOCUMENTS</small><div class="doc-links"><a href="assets/docs/Abdulfettah_Tasci_CV.pdf" target="_blank" rel="noopener">CV ↗</a><a href="assets/docs/Abdulfettah_Tasci_Portfolio.pdf" target="_blank" rel="noopener">Portfolio ↗</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="shell contact-wrap">
+        <div class="contact-kicker reveal"><span>05 / CONTACT</span><i></i></div>
+        <div class="contact-heading reveal">
+          <p>Have an aerospace, UAV or R&D problem?</p>
+          <h2>Let’s engineer it.</h2>
+        </div>
+        <div class="contact-grid reveal">
+          <a href="mailto:abdulfettah.tasci73@erzurum.edu.tr"><span>Email</span><b>abdulfettah.tasci73@erzurum.edu.tr</b><em>↗</em></a>
+          <a href="https://www.linkedin.com/in/abd%C3%BClfettah-ta%C5%9Fc%C4%B1-286494336" target="_blank" rel="noopener"><span>LinkedIn</span><b>Professional profile</b><em>↗</em></a>
+          <a href="https://grabcad.com/fettah.tasci-1" target="_blank" rel="noopener"><span>GrabCAD</span><b>CAD portfolio</b><em>↗</em></a>
+          <a href="https://github.com/fettahTasci48" target="_blank" rel="noopener"><span>GitHub</span><b>Code & repositories</b><em>↗</em></a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-foot">
-    <span>© 2026 Abdülfettah Taşcı</span>
-    <span>Erzurum, Türkiye</span>
+  <footer class="footer shell">
+    <p>© 2026 Abdülfettah Taşcı</p>
+    <p>Mechanical Engineering · UAV · Aerospace · R&D</p>
+    <a href="#top">Back to top ↑</a>
   </footer>
 
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Close project">×</button>
+    <div class="modal-layout">
+      <div class="modal-copy">
+        <p class="modal-kicker" id="modal-kicker"></p>
+        <h2 id="modal-title"></h2>
+        <p class="modal-description" id="modal-description"></p>
+        <div class="modal-facts" id="modal-facts"></div>
+        <div class="modal-links" id="modal-links"></div>
+      </div>
+      <div class="modal-gallery" id="modal-gallery"></div>
+    </div>
+  </dialog>
 </body>
 </html>
