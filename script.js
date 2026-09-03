@@ -1,250 +1,41 @@
-const projectData = {
-  "sar-drone": {
-    kicker: "PROJECT 01 · UAV · MECHANICAL DESIGN",
-    title: "Autonomous Search & Rescue System — Drone",
-    description: "Mechanical design of the multirotor platform with lightweight construction, functionality, component integration and structural layout treated as primary design constraints.",
-    role: "Mechanical Design Engineer",
-    tools: "SolidWorks · ANSYS Mechanical · UAV Integration",
-    focus: "Lightweight construction · component integration · structural layout",
-    images: ["sar-drone-1.png","sar-drone-2.png","sar-drone-3.png","sar-drone-4.png"],
-    links: [{label:"Flight Test",url:"https://drive.google.com/file/d/17MwAqT2XjVeArJpXNbskLxzj9TOFybo4/view?usp=sharing"}]
-  },
-  "fixed-wing": {
-    kicker: "PROJECT 02 · UAV · DESIGN & MANUFACTURING",
-    title: "Autonomous Search & Rescue System — Fixed Wing",
-    description: "Design and manufacturing contribution to the fixed-wing UAV platform developed for the Autonomous Search and Rescue System. The work strengthened mission-oriented UAV development and manufacturing experience.",
-    role: "Design & Manufacturing",
-    tools: "Aircraft Design · UAV Manufacturing",
-    focus: "Fixed-wing development · mission-oriented engineering",
-    images: ["fixed-wing-1.png","fixed-wing-2.png","fixed-wing-3.png"],
-    links: [{label:"Flight Video",url:"https://drive.google.com/file/d/1Dst21CEV_VQ2138wjOCrvWR2N_RvbiA0/view?usp=drive_link"}]
-  },
-  "recon": {
-    kicker: "PROJECT 03 · UAV · DEVELOPMENT",
-    title: "Surveillance & Reconnaissance UAV",
-    description: "A practical UAV platform designed and developed for observation, monitoring and field reconnaissance missions, with emphasis on aircraft design, structural development and mission-oriented engineering.",
-    role: "UAV Design & Development",
-    tools: "CAD · Structural Development · UAV Systems",
-    focus: "Observation · monitoring · reconnaissance",
-    images: ["recon-1.png","recon-2.png","recon-3.png"],
-    links: []
-  },
-  "add4bio": {
-    kicker: "PROJECT 04 · BIOMEDICAL · VISUALIZATION",
-    title: "Surgical Animation & Titanium Post-Processing | Add4Bio",
-    description: "Surgical animations were created to demonstrate the procedure pathway to doctors. Manufactured titanium parts were also post-processed through sanding and polishing. A non-realistic skull model was used in the animation to preserve patient confidentiality.",
-    role: "Animation & Post-Process Specialist",
-    tools: "Blender · Titanium / PLA post-processing",
-    focus: "Technical visualization · production support · confidentiality-conscious modeling",
-    images: ["add4bio-2.png","add4bio-1.png"],
-    links: [{label:"Animation",url:"https://drive.google.com/file/d/1lwTRTaTRgxjQrZy5YiQNYSRVtY6TXzoA/view?usp=sharing"}]
-  },
-  "trailer": {
-    kicker: "PROJECT 05 · R&D · TEST ENGINEERING",
-    title: "Trailer Rear-Impact Test System | Makist",
-    description: "Safety-focused engineering project for evaluating a patented energy-absorbing system mounted at the rear of truck trailers. A dedicated steering control and release mechanism were developed for a driverless test vehicle used in controlled impact testing.",
-    role: "Project Team Member",
-    tools: "Mechanical Design · Test Engineering · Mechanisms",
-    focus: "Steering control · release mechanism · controlled impact testing",
-    images: ["trailer-2.png","trailer-1.png","trailer-3.png"],
-    links: [
-      {label:"Animation",url:"https://drive.google.com/file/d/1AyhXZOs5cs_khmsVVZgIwvatC7x_9OZz/view?usp=drive_link"},
-      {label:"Steering Mechanism",url:"https://drive.google.com/file/d/12B3bhrQgenIoRDQSNuhQv-RmbC7CgpRv/view?usp=sharing"},
-      {label:"Release Mechanism",url:"https://drive.google.com/file/d/1v1I8I8BQmwvE9tUdviTFeW_IJYNSuw09/view?usp=sharing"}
-    ]
-  },
-  "cfd": {
-    kicker: "PROJECT 06 · CFD · FEA · XFLR5",
-    title: "CFD & Structural Analysis — TEKNOFEST Combat UAV",
-    description: "Aerodynamic and structural analyses of a UAV test prototype using ANSYS Fluent, ANSYS Mechanical and XFLR5. The work examined airflow behavior, aerodynamic performance and structural response under relevant loading conditions.",
-    role: "Simulation & Analysis",
-    tools: "ANSYS Fluent · ANSYS Mechanical · XFLR5",
-    focus: "CFD · aerodynamic performance · structural response",
-    images: ["cfd-4.png","cfd-2.png","cfd-3.png","cfd-1.png","cfd-5.png","cfd-6.png"],
-    links: []
-  },
-  "topology": {
-    kicker: "PROJECT 07 · TOPOLOGY · STRUCTURAL DESIGN",
-    title: "Structural Analysis & Manufacturing of a Topology-Inspired UAV Frame",
-    description: "A lightweight UAV frame was developed from an initial geometry, evaluated structurally, verified and moved to manufacturing. The project deepened interest in natural, organic topologies and topology-driven lightweight engineering with nTop.",
-    role: "Structural Design & Manufacturing",
-    tools: "nTop · ANSYS Mechanical · Additive Manufacturing",
-    focus: "Lightweighting · structural validation · organic topology",
-    images: ["topology-2.png","topology-1.png","topology-3.png","topology-4.png","topology-5.png"],
-    links: [{label:"Flight Video",url:"https://drive.google.com/file/d/1uGzx5fhoAD6E_A0OULFPFZuTqRD93bFw/view?usp=sharing"}]
-  }
+const projectData={
+  "sar-drone":{kicker:"PROJECT 01 · UAV · MECHANICAL DESIGN",title:"Autonomous Search & Rescue System — Drone",description:"Mechanical design of the multirotor drone platform with lightweight construction, functionality, component integration and structural layout as central design drivers.",role:"Mechanical Design Engineer",tools:"SolidWorks · ANSYS · UAV Integration",focus:"Lightweight design · packaging · structural layout",images:["sar-drone-1.png","sar-drone-2.png","sar-drone-3.png","sar-drone-4.png"],links:[{label:"Drone Flight Test",url:"https://drive.google.com/file/d/1_Jzz29cRZjKpXJkUrAvVANpPA-pI6hZZ/view?usp=sharing"}]},
+  "fixed-wing":{kicker:"PROJECT 02 · UAV · DESIGN & MANUFACTURING",title:"Autonomous Search & Rescue System — Fixed Wing",description:"Design and manufacturing contribution to a fixed-wing UAV platform developed for autonomous search-and-rescue missions, strengthening mission-oriented aircraft development experience.",role:"Design & Manufacturing",tools:"Aircraft Design · Manufacturing · UAV Development",focus:"Mission integration · airframe development · physical build",images:["fixed-wing-1.png","fixed-wing-2.png","fixed-wing-3.png"],links:[{label:"Flight Video",url:"https://drive.google.com/file/d/1g6HtWm2V3nId-kB2x2KMzk_Od_Azsbi-/view?usp=sharing"}]},
+  "recon":{kicker:"PROJECT 03 · UAV · DEVELOPMENT",title:"Surveillance & Reconnaissance UAV",description:"A practical surveillance and reconnaissance UAV platform designed and developed for observation, monitoring and field missions.",role:"UAV Design & Development",tools:"CAD · Structural Development · Manufacturing",focus:"Observation platform · field use · mission-oriented engineering",images:["recon-3.png","recon-1.png","recon-2.png"],links:[]},
+  "add4bio":{kicker:"PROJECT 04 · R&D · MEDICAL",title:"Surgical Animation & Titanium Post-Processing | Add4Bio",description:"Surgical animations were created to visualize procedure pathways, while manufactured titanium and PLA parts were post-processed through sanding and polishing. A non-realistic skull model was used to preserve patient confidentiality.",role:"Animation & Post-Process Specialist",tools:"Blender · Titanium / PLA post-processing",focus:"Technical visualization · production support · confidentiality-conscious modeling",images:["add4bio-2.png","add4bio-1.png"],links:[{label:"Animation",url:"https://drive.google.com/file/d/1lwTRTaTRgxjQrZy5YiQNYSRVtY6TXzoA/view?usp=sharing"}]},
+  "trailer":{kicker:"PROJECT 05 · R&D · TEST ENGINEERING",title:"Trailer Rear-Impact Test System | Makist",description:"Safety-focused engineering work for evaluating a patented energy-absorbing trailer system. A dedicated steering control and release mechanism were developed for the driverless test vehicle used in controlled impact testing.",role:"Project Team Member",tools:"Mechanical Design · Test Engineering · Mechanisms",focus:"Steering · release mechanism · controlled impact testing",images:["trailer-2.png","trailer-1.png","trailer-3.png"],links:[{label:"Animation",url:"https://drive.google.com/file/d/1AyhXZOs5cs_khmsVVZgIwvatC7x_9OZz/view?usp=drive_link"},{label:"Steering Mechanism",url:"https://drive.google.com/file/d/12B3bhrQgenIoRDQSNuhQv-RmbC7CgpRv/view?usp=sharing"},{label:"Release Mechanism",url:"https://drive.google.com/file/d/1v1I8I8BQmwvE9tUdviTFeW_IJYNSuw09/view?usp=sharing"}]},
+  "cfd":{kicker:"PROJECT 06 · CFD · FEA · XFLR5",title:"CFD & Structural Analysis — TEKNOFEST Combat UAV",description:"Aerodynamic and structural analyses of a UAV test prototype using ANSYS Fluent, ANSYS Mechanical and XFLR5, examining airflow behavior, aerodynamic performance and structural response.",role:"Simulation & Analysis",tools:"ANSYS Fluent · ANSYS Mechanical · XFLR5",focus:"CFD · aerodynamic performance · structural response",images:["cfd-4.png","cfd-2.png","cfd-3.png","cfd-1.png","cfd-5.png","cfd-6.png"],links:[]},
+  "topology":{kicker:"PROJECT 07 · TOPOLOGY · STRUCTURAL DESIGN",title:"Structural Analysis & Manufacturing of a Topology-Inspired UAV Frame",description:"A lightweight UAV frame was developed from an initial geometry, structurally evaluated and verified before manufacturing. The project built a strong interest in organic topology and topology-driven lightweight engineering with nTop.",role:"Structural Design & Manufacturing",tools:"nTop · ANSYS Mechanical · Additive Manufacturing",focus:"Lightweighting · structural validation · organic topology",images:["topology-2.png","topology-1.png","topology-3.png","topology-4.png","topology-5.png"],links:[{label:"Flight Video",url:"https://drive.google.com/file/d/1uGzx5fhoAD6E_A0OULFPFZuTqRD93bFw/view?usp=sharing"}]}
 };
-
-const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const progressBar = document.querySelector('.scroll-progress span');
-const reveals = [...document.querySelectorAll('.reveal')];
-const navLinks = [...document.querySelectorAll('.nav-links a')];
-const sections = [...document.querySelectorAll('main section[id]')];
-
-if ('IntersectionObserver' in window && !reduceMotion) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: .12 });
-  reveals.forEach(el => observer.observe(el));
-} else {
-  reveals.forEach(el => el.classList.add('is-visible'));
-}
-
-window.addEventListener('scroll', () => {
-  const max = document.documentElement.scrollHeight - window.innerHeight;
-  progressBar.style.width = `${max > 0 ? (window.scrollY / max) * 100 : 0}%`;
-
-  let active = 'home';
-  sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop - 180) active = section.id;
-  });
-  navLinks.forEach(link => link.classList.toggle('is-active', link.getAttribute('href') === `#${active}`));
-}, { passive: true });
-
-const menuButton = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-links');
-menuButton.addEventListener('click', () => {
-  const open = !navMenu.classList.contains('is-open');
-  navMenu.classList.toggle('is-open', open);
-  menuButton.classList.toggle('is-open', open);
-  menuButton.setAttribute('aria-expanded', String(open));
-  document.body.classList.toggle('menu-open', open);
-});
-navLinks.forEach(link => link.addEventListener('click', () => {
-  navMenu.classList.remove('is-open');
-  menuButton.classList.remove('is-open');
-  menuButton.setAttribute('aria-expanded', 'false');
-  document.body.classList.remove('menu-open');
-}));
-
-const hero = document.querySelector('.hero');
-const spotlight = document.querySelector('.hero-spotlight');
-if (!reduceMotion) {
-  hero.addEventListener('pointermove', (event) => {
-    const rect = hero.getBoundingClientRect();
-    spotlight.style.left = `${event.clientX - rect.left}px`;
-    spotlight.style.top = `${event.clientY - rect.top}px`;
-  });
-}
-
-const counters = [...document.querySelectorAll('[data-count]')];
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    const el = entry.target;
-    const target = Number(el.dataset.count);
-    if (reduceMotion) { el.textContent = target; return; }
-    const start = performance.now();
-    const duration = 850;
-    const tick = (now) => {
-      const p = Math.min(1, (now - start) / duration);
-      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
-      if (p < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-    counterObserver.unobserve(el);
-  });
-}, { threshold: .7 });
-counters.forEach(el => counterObserver.observe(el));
-
-const magneticButtons = [...document.querySelectorAll('.magnetic')];
-if (!reduceMotion) {
-  magneticButtons.forEach(button => {
-    button.addEventListener('pointermove', (event) => {
-      const rect = button.getBoundingClientRect();
-      const x = (event.clientX - rect.left - rect.width / 2) * .08;
-      const y = (event.clientY - rect.top - rect.height / 2) * .12;
-      button.style.transform = `translate(${x}px, ${y}px)`;
-    });
-    button.addEventListener('pointerleave', () => button.style.transform = '');
-  });
-}
-
-const filters = [...document.querySelectorAll('.filter')];
-const cards = [...document.querySelectorAll('.project-card')];
-filters.forEach(filterButton => {
-  filterButton.addEventListener('click', () => {
-    filters.forEach(btn => btn.classList.remove('is-active'));
-    filterButton.classList.add('is-active');
-    const filter = filterButton.dataset.filter;
-    cards.forEach(card => {
-      const categories = card.dataset.category.split(' ');
-      card.classList.toggle('is-hidden', filter !== 'all' && !categories.includes(filter));
-    });
-  });
-});
-
-if (!reduceMotion && window.matchMedia('(pointer:fine)').matches) {
-  cards.forEach(card => {
-    card.addEventListener('pointermove', (event) => {
-      const rect = card.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width - .5;
-      const y = (event.clientY - rect.top) / rect.height - .5;
-      card.style.transform = `perspective(900px) rotateX(${y * -2.2}deg) rotateY(${x * 2.2}deg) translateY(-7px)`;
-    });
-    card.addEventListener('pointerleave', () => card.style.transform = '');
-  });
-}
-
-const modal = document.querySelector('#project-modal');
-const modalTitle = document.querySelector('#modal-title');
-const modalKicker = document.querySelector('#modal-kicker');
-const modalDescription = document.querySelector('#modal-description');
-const modalFacts = document.querySelector('#modal-facts');
-const modalGallery = document.querySelector('#modal-gallery');
-const modalLinks = document.querySelector('#modal-links');
-
-function openProject(key) {
-  const data = projectData[key];
-  if (!data) return;
-  modalKicker.textContent = data.kicker;
-  modalTitle.textContent = data.title;
-  modalDescription.textContent = data.description;
-  modalFacts.innerHTML = `
-    <div><strong>ROLE</strong><span>${data.role}</span></div>
-    <div><strong>TOOLS</strong><span>${data.tools}</span></div>
-    <div><strong>FOCUS</strong><span>${data.focus}</span></div>`;
-  modalGallery.innerHTML = data.images.map((img, i) => `<img src="assets/images/${img}" alt="${data.title} — image ${i + 1}" loading="lazy">`).join('');
-  modalLinks.innerHTML = data.links.map(link => `<a href="${link.url}" target="_blank" rel="noopener">${link.label} ↗</a>`).join('');
-  modal.showModal();
-  document.body.style.overflow = 'hidden';
-  modalGallery.querySelectorAll('img').forEach(img => {
-    img.addEventListener('click', () => img.classList.toggle('image-lightbox'));
-  });
-}
-
-function closeModal() {
-  modalGallery.querySelectorAll('.image-lightbox').forEach(img => img.classList.remove('image-lightbox'));
-  modal.close();
-  document.body.style.overflow = '';
-}
-
-document.querySelectorAll('[data-project]').forEach(el => {
-  el.addEventListener('click', () => openProject(el.dataset.project));
-  if (el.classList.contains('project-card')) {
-    el.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        openProject(el.dataset.project);
-      }
-    });
-  }
-});
-
-document.querySelector('.modal-close').addEventListener('click', closeModal);
-modal.addEventListener('click', (event) => {
-  if (event.target === modal) closeModal();
-});
-modal.addEventListener('close', () => { document.body.style.overflow = ''; });
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    const zoomed = document.querySelector('.image-lightbox');
-    if (zoomed) zoomed.classList.remove('image-lightbox');
-  }
-});
+const experienceData={
+  etuken:{kicker:"ETÜKEN UAV TEAM",title:"Mechanical Design Team Member",items:["Aircraft and drone systems designed in SolidWorks.","Structural analyses in ANSYS Mechanical and aerodynamic analyses with XFLR5 / ANSYS Fluent.","Composite and CNC-supported manufacturing, assembly and geometry optimization."]},
+  makist:{kicker:"MAKIST R&D ENGINEERING",title:"Project Team Member",items:["Contributed to a driverless test vehicle system for trailer rear-impact safety testing.","Worked on steering control and release mechanisms used in the impact-test process.","Supported evaluation of a patented energy-absorbing trailer safety system."]},
+  add4bio:{kicker:"ADD4BIO",title:"Animation & Post-Process Specialist",items:["Performed sanding and polishing of manufactured titanium and PLA parts.","Created surgical animations and technical visualizations in Blender.","Supported production processes for patient-specific implant procedures."]}
+};
+const systems={
+  design:{score:92,kicker:"MECHANICAL DESIGN",title:"From geometry to manufacturable hardware.",tools:["SolidWorks","Siemens NX","AutoCAD","Blender"],desc:"Aircraft, drone and mechanism design with a strong design-to-manufacturing mindset.",bars:[94,88,84],labels:["CAD","Integration","Manufacturing"],color:"#28a9ff"},
+  analysis:{score:90,kicker:"SIMULATION & ANALYSIS",title:"Use physics before cutting material.",tools:["ANSYS Mechanical","ANSYS Fluent","XFLR5","nTop","MATLAB"],desc:"CFD, structural response, topology optimization and simulation-driven engineering decisions.",bars:[92,91,86],labels:["CFD","FEA","Optimization"],color:"#ff7a1a"},
+  uav:{score:93,kicker:"UAV SYSTEMS",title:"Mission-oriented aircraft development.",tools:["Aircraft","Multirotor","FPV","Pixhawk"],desc:"Design, manufacturing, integration, flow analysis and field testing across UAV platforms.",bars:[95,90,87],labels:["Airframe","Integration","Field Test"],color:"#3add77"},
+  code:{score:76,kicker:"PROGRAMMING & COMPUTATION",title:"Software as an engineering tool.",tools:["C","Python","MATLAB","Git / GitHub"],desc:"Low-level programming, numerical work and engineering computation supporting physical systems.",bars:[78,72,80],labels:["C","Python","MATLAB"],color:"#f8fafc"}
+};
+const labData={
+  design:{label:"DESIGN MODE",value:"CAD + SYSTEM ARCHITECTURE",desc:"Mission requirements translated into geometry, packaging and mechanical architecture.",console:'system.design({ mission: "UAV", mass: "optimized" })',color:"#28a9ff"},
+  simulate:{label:"SIMULATION MODE",value:"CFD + FEA + XFLR5",desc:"Airflow, aerodynamic performance and structural response evaluated before the build.",console:'solver.run({ cfd: true, fea: true, validate: "loads" })',color:"#ff7a1a"},
+  build:{label:"BUILD MODE",value:"MANUFACTURING + ASSEMBLY",desc:"Composite, CNC-supported and additive workflows turn analysis-backed geometry into hardware.",console:'workshop.build({ process: "hybrid", status: "physical" })',color:"#3add77"},
+  test:{label:"TEST MODE",value:"FLIGHT + R&D VALIDATION",desc:"Real conditions close the engineering loop through flight, mechanism and safety testing.",console:'field.test({ environment: "real", iterate: true })',color:"#f8fafc"}
+};
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const progress=document.querySelector('.scroll-progress span');
+const reveals=[...document.querySelectorAll('.reveal')];
+if('IntersectionObserver'in window&&!reduceMotion){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.1});reveals.forEach(el=>io.observe(el))}else reveals.forEach(el=>el.classList.add('is-visible'));
+window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${max>0?scrollY/max*100:0}%`;let active='home';document.querySelectorAll('main section[id]').forEach(s=>{if(scrollY>=s.offsetTop-180)active=s.id});document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('is-active',a.getAttribute('href')===`#${active}`))},{passive:true});
+const menuBtn=document.querySelector('.menu-toggle'),navMenu=document.querySelector('.nav-links');menuBtn.addEventListener('click',()=>{const open=!navMenu.classList.contains('is-open');navMenu.classList.toggle('is-open',open);menuBtn.classList.toggle('is-open',open);menuBtn.setAttribute('aria-expanded',String(open))});document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{navMenu.classList.remove('is-open');menuBtn.classList.remove('is-open');menuBtn.setAttribute('aria-expanded','false')}));
+if(!reduceMotion){const glow=document.querySelector('.cursor-glow');window.addEventListener('pointermove',e=>{glow.style.transform=`translate(${e.clientX-210}px,${e.clientY-210}px)`},{passive:true});document.querySelectorAll('.magnetic').forEach(btn=>{btn.addEventListener('pointermove',e=>{const r=btn.getBoundingClientRect();btn.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.06}px,${(e.clientY-r.top-r.height/2)*.08}px)`});btn.addEventListener('pointerleave',()=>btn.style.transform='')})}
+const counters=[...document.querySelectorAll('[data-count]')];if('IntersectionObserver'in window){const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,target=+el.dataset.count;if(reduceMotion){el.textContent=target}else{const start=performance.now();const tick=n=>{const p=Math.min(1,(n-start)/800);el.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)}cio.unobserve(el)}),{threshold:.5});counters.forEach(x=>cio.observe(x))}
+const canvas=document.getElementById('ambient-canvas'),ctx=canvas.getContext('2d');let dots=[];function resizeCanvas(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);dots=Array.from({length:Math.min(65,Math.floor(innerWidth/24))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.12,vy:(Math.random()-.5)*.12,r:Math.random()*1.2+.3,c:["#28a9ff","#ff7a1a","#3add77"][Math.floor(Math.random()*3)]}))}function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);for(const d of dots){d.x+=d.vx;d.y+=d.vy;if(d.x<0||d.x>innerWidth)d.vx*=-1;if(d.y<0||d.y>innerHeight)d.vy*=-1;ctx.globalAlpha=.45;ctx.fillStyle=d.c;ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fill()}ctx.globalAlpha=1;if(!reduceMotion)requestAnimationFrame(draw)}resizeCanvas();addEventListener('resize',resizeCanvas);if(!reduceMotion)draw();
+const labNodes=[...document.querySelectorAll('.lab-node')];labNodes.forEach(node=>node.addEventListener('click',()=>{labNodes.forEach(n=>n.classList.remove('is-active'));node.classList.add('is-active');const d=labData[node.dataset.node];document.getElementById('lab-label').textContent=d.label;document.getElementById('lab-value').textContent=d.value;document.getElementById('lab-desc').textContent=d.desc;document.getElementById('lab-console-text').textContent=d.console;document.getElementById('lab-label').style.color=d.color;document.querySelector('.core-ring').style.borderColor=d.color+'66'}));
+const filters=[...document.querySelectorAll('.filter')],cards=[...document.querySelectorAll('.project-card')];filters.forEach(f=>f.addEventListener('click',()=>{filters.forEach(x=>x.classList.remove('is-active'));f.classList.add('is-active');const value=f.dataset.filter;cards.forEach(c=>c.classList.toggle('is-hidden',value!=='all'&&!c.dataset.category.split(' ').includes(value)))}));
+if(!reduceMotion&&matchMedia('(pointer:fine)').matches){cards.forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(1000px) rotateX(${y*-2}deg) rotateY(${x*2.6}deg) translateY(-5px)`});card.addEventListener('pointerleave',()=>card.style.transform='')})}
+const expButtons=[...document.querySelectorAll('.timeline-item')];expButtons.forEach(btn=>btn.addEventListener('click',()=>{expButtons.forEach(x=>x.classList.remove('is-active'));btn.classList.add('is-active');const d=experienceData[btn.dataset.exp];document.getElementById('exp-kicker').textContent=d.kicker;document.getElementById('exp-title').textContent=d.title;document.getElementById('exp-list').innerHTML=d.items.map(i=>`<li>${i}</li>`).join('')}));
+const systemTabs=[...document.querySelectorAll('.system-tab')];systemTabs.forEach(tab=>tab.addEventListener('click',()=>{systemTabs.forEach(x=>x.classList.remove('is-active'));tab.classList.add('is-active');const d=systems[tab.dataset.system];document.getElementById('system-score').textContent=d.score;document.getElementById('system-kicker').textContent=d.kicker;document.getElementById('system-kicker').style.color=d.color;document.getElementById('system-title').textContent=d.title;document.getElementById('system-desc').textContent=d.desc;document.getElementById('system-tools').innerHTML=d.tools.map(t=>`<span>${t}</span>`).join('');document.querySelector('.gauge-progress').style.stroke=d.color;document.querySelector('.gauge-progress').style.strokeDashoffset=390*(1-d.score/100);document.getElementById('system-bars').innerHTML=d.labels.map((l,i)=>`<div><span>${l}</span><i><b style="width:${d.bars[i]}%;background:${d.color}"></b></i></div>`).join('')}));
+const modal=document.getElementById('project-modal'),mainImg=document.getElementById('modal-main-image'),thumbs=document.getElementById('modal-thumbs'),counter=document.getElementById('gallery-counter');let gallery=[],galleryIndex=0,currentTitle='';function setGallery(i){galleryIndex=(i+gallery.length)%gallery.length;mainImg.src=`assets/images/${gallery[galleryIndex]}`;mainImg.alt=`${currentTitle} — image ${galleryIndex+1}`;counter.textContent=`${galleryIndex+1} / ${gallery.length}`;thumbs.querySelectorAll('button').forEach((b,j)=>b.classList.toggle('is-active',j===galleryIndex))}function openProject(key){const d=projectData[key];if(!d)return;document.getElementById('modal-kicker').textContent=d.kicker;document.getElementById('modal-title').textContent=d.title;document.getElementById('modal-description').textContent=d.description;document.getElementById('modal-facts').innerHTML=`<div><strong>ROLE</strong><span>${d.role}</span></div><div><strong>TOOLS</strong><span>${d.tools}</span></div><div><strong>FOCUS</strong><span>${d.focus}</span></div>`;gallery=d.images;currentTitle=d.title;thumbs.innerHTML=gallery.map((img,i)=>`<button type="button" aria-label="View image ${i+1}"><img src="assets/images/${img}" alt=""></button>`).join('');thumbs.querySelectorAll('button').forEach((b,i)=>b.addEventListener('click',()=>setGallery(i)));document.getElementById('modal-links').innerHTML=d.links.map(l=>`<a href="${l.url}" target="_blank" rel="noopener">${l.label} ↗</a>`).join('');setGallery(0);modal.showModal();document.body.style.overflow='hidden'}function closeModal(){modal.close();document.body.style.overflow=''}document.querySelectorAll('[data-project]').forEach(el=>{el.addEventListener('click',()=>openProject(el.dataset.project));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openProject(el.dataset.project)}})});document.querySelector('.modal-close').addEventListener('click',closeModal);document.querySelector('.gallery-prev').addEventListener('click',()=>setGallery(galleryIndex-1));document.querySelector('.gallery-next').addEventListener('click',()=>setGallery(galleryIndex+1));modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});modal.addEventListener('close',()=>document.body.style.overflow='');
